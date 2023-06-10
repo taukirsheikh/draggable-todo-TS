@@ -39,3 +39,51 @@
     transform: scale(0.8);
     box-shadow: 0 0 5px black;
 }
+
+
+.tasklist{
+    display:flex;
+    width: 90%;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+
+.allTask__single{
+    display:flex;
+    width:50%;
+    border-radius:1rem;
+    padding: 1rem;
+    margin-top:15px;
+    background-image: url("https://img.freepik.com/free-vector/paper-style-smooth-background_52683-63751.jpg")
+}
+
+.allTask__single--text{
+    flex:1;
+    padding:5px;
+    border:none;
+    font-size:20px;
+}
+.allTask__single--text:focus{
+    outline:none;
+}
+
+.icon{
+    margin-left:0.8rem;
+    font-size:25px;
+    cursor:pointer;
+
+}
+
+@media(max-width:700px){
+    .input{
+        width:95%;
+    }
+
+    .allTask{
+        width:95%;
+    }
+
+    .allTask__single{
+        width:100%
+    }
+}
