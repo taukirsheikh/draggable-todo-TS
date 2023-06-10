@@ -1,5 +1,6 @@
 
 import './App.css'
+import InputFeild from './components/InputFeild'
 const App: React.FC = () => {
 
 
@@ -8,8 +9,10 @@ const App: React.FC = () => {
     
       <div className='app'>
         <span className="heading">TASKIFY</span>
-        
+        <InputFeild/>
+
       </div>
+
 </>
     
 
