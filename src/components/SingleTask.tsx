@@ -66,7 +66,7 @@ useEffect(()=>{
                 )
 
             }
-            <div>
+            <div className='icon__container'>
 
                 <span className='icon' onClick={() => {
 
