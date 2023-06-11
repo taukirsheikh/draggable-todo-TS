@@ -2,7 +2,7 @@
 import { Todo } from "../model"
 import { AiOutlineCheck, AiFillEdit, AiFillDelete } from 'react-icons/ai'
 import './style.css'
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 type Props = {
     task: Todo;
     allTask: Todo[];
@@ -37,11 +37,19 @@ const SingleTask = ({ task, allTask, setAllTask }: Props) => {
 
     }
 
+    const inputRef=useRef<HTMLInputElement>(null)
+useEffect(()=>{
+    inputRef.current?.focus()
+   
+},[edit])
     return (
         <form className="allTask__single" onSubmit={(e)=>handleEdit(e,task.id)}>
             {
                 edit ? (
-                    <input value={task.todo} onChange={(e)=>setEditTask(e.target.value)}/>
+                    <input
+                    ref={inputRef}
+                     value={editTask}
+                      onChange={(e)=>setEditTask(e.target.value)}/>
 
                 ) : (
 

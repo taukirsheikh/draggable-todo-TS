@@ -54,7 +54,16 @@
     border-radius:1rem;
     padding: 1rem;
     margin-top:15px;
+
     background-image: url("https://img.freepik.com/free-vector/paper-style-smooth-background_52683-63751.jpg")
+}
+
+
+.allTask__single>input{
+    outline:none;
+    border-radius:0.5rem;
+    border:none;
+    padding:4px;
 }
 
 .allTask__single--text{
